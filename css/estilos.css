@@ -1,0 +1,134 @@
+*
+{
+	margin:0;
+}
+body{
+	background: #02010a;
+	color: white;
+	font-size: 16px;
+	font-family: 'Dancing Script';
+  font-size: 14pt;
+}
+@font-face{
+	font-family: 'DancingScript-Regular';
+src: url('../fuentes/DancingScript-Regular.ttf');
+}
+#contenido {
+	font-family: 'DancingScript-Regular';
+	width: 900px;
+	margin: 0 auto;
+	min-height: 200px;
+}
+
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px #02010a;
+  padding: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+#titulocabecera{
+  width: 70%;
+  text-indent: 15px;
+}
+#menuCabecera{
+  width: 30%;
+  font-size: 18pt;
+}
+#menucabecera a, #menucabecera a:hover{
+  color: #fff;
+  padding: 5px 10px;
+}
+
+#menucabecera a + a::before {
+  color: #fff;
+  text-decoration: none;
+}
+#menucabecera .actual{
+  text-decoration: none;
+}
+
+#imagenprincipal{
+  background: #82c3a6;
+  padding: 20px;
+	margin:0 auto;
+}
+img{
+  width: 100%;
+}
+#imagensecundaria{
+	color:black;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  background: #d5c75f;
+  min-height: 100px;
+  padding: 20px 0;
+}
+.imagensec1{
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 15px;	
+	}
+.img1{
+  border: 2px;
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  transition: transform 2s;
+}
+.img1:hover{
+  transform: rotate(10deg);
+}
+.img2{
+  border: 2px;
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  transition: transform 2s;
+}
+.img2:hover{
+  transform: translate(20px, -5px);
+}
+
+footer{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  background-color: #C6d5c5;
+  padding: 15px 0;
+  color: black;
+  border-radius: 0 0 10px 10px;
+}
+footer .columna{
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.icon-social{
+  width: 15px;
+}
+
+
+@media screen and (max-width: 1000px){
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+  #menucabecera, #titulocabecera{
+    width: 100%;
+    text-align: center;
+  }
+  .imagensecundaria{
+    width: 100%;
+  }
+  footer .columna{
+    width: 100%;
+  }
+}
+
+
