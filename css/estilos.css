@@ -59,7 +59,7 @@ img{
   width: 100%;
 }
 #imagensecundaria{
-	color:black;
+  color:black;
   display: flex;
   display: -webkit-flex;
   flex-flow: row wrap;
@@ -93,11 +93,19 @@ img{
   transform: translate(20px, -5px);
 }
 .galeria-paisajes{
-	display: flex;
+  color:black;
+  display: flex;
   display: -webkit-flex;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
-}
+  background: #d5c75f;
+  min-height: 100px; 
+	}
+	.fotospaisajes{
+	width: 28%;
+    padding: 18px;
+	}
+
 #paisajes-1{
 filter:blur(10px);	
 }
@@ -107,24 +115,26 @@ filter:blur(10px);
 #paisajes-3{
 filter:sepia(90%);	
 }
-.fotospaisajes{
-	width: 25%;
-   padding: 15px;	
-	margin-left:10px;
-	margin-right: 10px;	
-	}
+#paisajes-1 ,#paisajes-2 ,#paisajes-3 ,#paisajes-4 ,#paisajes-5 ,#paisajes-6{
+    padding: 20px;	
+	;
+}
+
 .galeria-retratos{
-	display: flex;
+  color:black;
+  display: flex;
   display: -webkit-flex;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
+  background: #d5c75f;
+  min-height: 100px; 
 }
+
 .fotosretratos{
-	width: 25%;
-   padding: 15px;	
-	margin-left:10px;
-	margin-right: 10px;	
-	}
+   width: 28%;
+   padding: 18px;
+   border: 1px;
+}
 
 #retratos-1{
 filter:blur(10px);	
@@ -135,7 +145,9 @@ filter:blur(10px);
 #retratos-3{
 filter:sepia(90%);	
 }
-	
+#retratos-1 ,#retratos-2 ,#retratos-3 ,#retratos-4 ,#retratos-5 ,#retratos-6{
+    padding: 20px;
+	}	
 footer{
   display: flex;
   display: -webkit-flex;
@@ -172,6 +184,8 @@ footer .columna{
   }
 }
 	
+
+
 
 
 Imagen Secundaria Aplica como color de fondo #d5c75f y un borde de 1px.
